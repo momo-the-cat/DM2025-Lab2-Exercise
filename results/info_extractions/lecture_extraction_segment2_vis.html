@@ -1,0 +1,203 @@
+<style>
+.lx-highlight { position: relative; border-radius:3px; padding:1px 2px;}
+.lx-highlight .lx-tooltip {
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out;
+  background: #333;
+  color: #fff;
+  text-align: left;
+  border-radius: 4px;
+  padding: 6px 8px;
+  position: absolute;
+  z-index: 1000;
+  bottom: 125%;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 12px;
+  max-width: 240px;
+  white-space: normal;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+}
+.lx-highlight:hover .lx-tooltip { visibility: visible; opacity:1; }
+.lx-animated-wrapper { max-width: 100%; font-family: Arial, sans-serif; }
+.lx-controls {
+  background: #fafafa; border: 1px solid #90caf9; border-radius: 8px;
+  padding: 12px; margin-bottom: 16px;
+}
+.lx-button-row {
+  display: flex; justify-content: center; gap: 8px; margin-bottom: 12px;
+}
+.lx-control-btn {
+  background: #4285f4; color: white; border: none; border-radius: 4px;
+  padding: 8px 16px; cursor: pointer; font-size: 13px; font-weight: 500;
+  transition: background-color 0.2s;
+}
+.lx-control-btn:hover { background: #3367d6; }
+.lx-progress-container {
+  margin-bottom: 8px;
+}
+.lx-progress-slider {
+  width: 100%; margin: 0; appearance: none; height: 6px;
+  background: #ddd; border-radius: 3px; outline: none;
+}
+.lx-progress-slider::-webkit-slider-thumb {
+  appearance: none; width: 18px; height: 18px; background: #4285f4;
+  border-radius: 50%; cursor: pointer;
+}
+.lx-progress-slider::-moz-range-thumb {
+  width: 18px; height: 18px; background: #4285f4; border-radius: 50%;
+  cursor: pointer; border: none;
+}
+.lx-status-text {
+  text-align: center; font-size: 12px; color: #666; margin-top: 4px;
+}
+.lx-text-window {
+  font-family: monospace; white-space: pre-wrap; border: 1px solid #90caf9;
+  padding: 12px; max-height: 260px; overflow-y: auto; margin-bottom: 12px;
+  line-height: 1.6;
+}
+.lx-attributes-panel {
+  background: #fafafa; border: 1px solid #90caf9; border-radius: 6px;
+  padding: 8px 10px; margin-top: 8px; font-size: 13px;
+}
+.lx-current-highlight {
+  border-bottom: 4px solid #ff4444;
+  font-weight: bold;
+  animation: lx-pulse 1s ease-in-out;
+}
+@keyframes lx-pulse {
+  0% { text-decoration-color: #ff4444; }
+  50% { text-decoration-color: #ff0000; }
+  100% { text-decoration-color: #ff4444; }
+}
+.lx-legend {
+  font-size: 12px; margin-bottom: 8px;
+  padding-bottom: 8px; border-bottom: 1px solid #e0e0e0;
+}
+.lx-label {
+  display: inline-block;
+  padding: 2px 4px;
+  border-radius: 3px;
+  margin-right: 4px;
+  color: #000;
+}
+.lx-attr-key {
+  font-weight: 600;
+  color: #1565c0;
+  letter-spacing: 0.3px;
+}
+.lx-attr-value {
+  font-weight: 400;
+  opacity: 0.85;
+  letter-spacing: 0.2px;
+}
+
+/* Add optimizations with larger fonts and better readability for GIFs */
+.lx-gif-optimized .lx-text-window { font-size: 16px; line-height: 1.8; }
+.lx-gif-optimized .lx-attributes-panel { font-size: 15px; }
+.lx-gif-optimized .lx-current-highlight { text-decoration-thickness: 4px; }
+</style>
+    <div class="lx-animated-wrapper lx-gif-optimized">
+      <div class="lx-attributes-panel">
+        <div class="lx-legend">Highlights Legend: <span class="lx-label" style="background-color:#D2E3FC;">key_concept</span> <span class="lx-label" style="background-color:#C8E6C9;">practical_insight</span></div>
+        <div id="attributesContainer"></div>
+      </div>
+      <div class="lx-text-window" id="textWindow">
+        # LECTURE ANALYSIS: Ordinal Values
+## Video Segment: 90:00 - 92:28
+
+[SLIDE DESCRIPTION]
+<span class="lx-highlight lx-current-highlight" data-idx="0" style="background-color:#D2E3FC;">Ordinal values can help to order objects. Examples of medals: Gold, Silver, Bronze. Levels of agreement: Strongly disagree, Disagree, Neutral, Agree, Strongly agree.</span> <span class="lx-highlight" data-idx="1" style="background-color:#D2E3FC;">How to analyze? Distribution, Mode, Mean (Range).</span>
+
+[TRANSCRIPT - 00:00:00]
+I do a quotation. And then I will qualify. I do me. And then I do a quotation. I do a range as a quotation. I want you to give you another example. So in that another example, could you go to NTU Cool? And then there is a question called assessing academic data quality. So go there. And then try to understand why actually I say is something very difficult for you need to be clear about that. <span class="lx-highlight" data-idx="2" style="background-color:#C8E6C9;">Actually you see people do me all the time about that. But that is not right. And then I want you to know after this class, you need to know why is not right.</span>
+
+[SLIDE DESCRIPTION]
+The slide shows a quiz titled &#x27;Assessing Academic Data Quality&#x27;. It asks to <span class="lx-highlight" data-idx="3" style="background-color:#C8E6C9;">identify potential problems when interpreting the data.</span> The table shows average teaching evaluation scores for various colleges over academic year 112. The options are: &#x27;Final Presentation&#x27;, &#x27;Data processing&#x27;, &#x27;Evaluation&#x27;. The results show percentages for each option, with &#x27;Data processing&#x27; having the highest percentage of respondents who identified it correctly.
+
+[SLIDE DESCRIPTION]
+The slide shows the quiz details: Title: Assessing Academic Data Quality. Question 1: The table below shows the average teaching evaluation scores from various colleges in Academic Year 112. Identify potential problems when interpreting the data. Select all that apply. Points: 0.5. The table lists colleges and their scores. The question asks to identify potential problems when interpreting this data.
+
+      </div>
+      <div class="lx-controls">
+        <div class="lx-button-row">
+          <button class="lx-control-btn" onclick="playPause()">▶️ Play</button>
+          <button class="lx-control-btn" onclick="prevExtraction()">⏮ Previous</button>
+          <button class="lx-control-btn" onclick="nextExtraction()">⏭ Next</button>
+        </div>
+        <div class="lx-progress-container">
+          <input type="range" id="progressSlider" class="lx-progress-slider"
+                 min="0" max="3" value="0"
+                 onchange="jumpToExtraction(this.value)">
+        </div>
+        <div class="lx-status-text">
+          Entity <span id="entityInfo">1/4</span> |
+          Pos <span id="posInfo">[88-253]</span>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      (function() {
+        const extractions = [{"index": 0, "class": "key_concept", "text": "Ordinal values can help to order objects. Examples of medals: Gold, Silver, Bronze. Levels of agreement: Strongly disagree, Disagree, Neutral, Agree, Strongly agree.", "color": "#D2E3FC", "startPos": 88, "endPos": 253, "beforeText": "# LECTURE ANALYSIS: Ordinal Values\n## Video Segment: 90:00 - 92:28\n\n[SLIDE DESCRIPTION]\n", "extractionText": "Ordinal values can help to order objects. Examples of medals: Gold, Silver, Bronze. Levels of agreement: Strongly disagree, Disagree, Neutral, Agree, Strongly agree.", "afterText": " How to analyze? Distribution, Mode, Mean (Range).\n\n[TRANSCRIPT - 00:00:00]\nI do a quotation. And then I will qualify. I do me. And then I do a quotat", "attributesHtml": "<div><strong>class:</strong> key_concept</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">concept_name</span>: <span class=\"lx-attr-value\">Ordinal Values</span>, <span class=\"lx-attr-key\">definition</span>: <span class=\"lx-attr-value\">Values that can be used to order objects, such as rankings or categories with a defined sequence.</span>, <span class=\"lx-attr-key\">difficulty_rating</span>: <span class=\"lx-attr-value\">Beginner</span>, <span class=\"lx-attr-key\">simplified_explanation</span>: <span class=\"lx-attr-value\">These are values that have a natural order, like first, second, third, or &#x27;agree&#x27;, &#x27;neutral&#x27;, &#x27;disagree&#x27;.</span>}</div>"}, {"index": 1, "class": "key_concept", "text": "How to analyze? Distribution, Mode, Mean (Range).", "color": "#D2E3FC", "startPos": 254, "endPos": 303, "beforeText": "an help to order objects. Examples of medals: Gold, Silver, Bronze. Levels of agreement: Strongly disagree, Disagree, Neutral, Agree, Strongly agree. ", "extractionText": "How to analyze? Distribution, Mode, Mean (Range).", "afterText": "\n\n[TRANSCRIPT - 00:00:00]\nI do a quotation. And then I will qualify. I do me. And then I do a quotation. I do a range as a quotation. I want you to gi", "attributesHtml": "<div><strong>class:</strong> key_concept</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">concept_name</span>: <span class=\"lx-attr-value\">Analysis of Ordinal Data</span>, <span class=\"lx-attr-key\">definition</span>: <span class=\"lx-attr-value\">Methods for analyzing ordinal data include examining distributions, finding the mode, and calculating the mean (within a defined range).</span>, <span class=\"lx-attr-key\">difficulty_rating</span>: <span class=\"lx-attr-value\">Intermediate</span>, <span class=\"lx-attr-key\">simplified_explanation</span>: <span class=\"lx-attr-value\">When looking at ordered data, you can see how spread out it is, what the most common answer is (mode), and sometimes an average (mean), but you have to be careful with averages for ordered data.</span>}</div>"}, {"index": 2, "class": "practical_insight", "text": "Actually you see people do me all the time about that. But that is not right. And then I want you to know after this class, you need to know why is not right.", "color": "#C8E6C9", "startPos": 724, "endPos": 882, "beforeText": "ng academic data quality. So go there. And then try to understand why actually I say is something very difficult for you need to be clear about that. ", "extractionText": "Actually you see people do me all the time about that. But that is not right. And then I want you to know after this class, you need to know why is not right.", "afterText": "\n\n[SLIDE DESCRIPTION]\nThe slide shows a quiz titled &#x27;Assessing Academic Data Quality&#x27;. It asks to identify potential problems when interpreting the da", "attributesHtml": "<div><strong>class:</strong> practical_insight</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">insight_type</span>: <span class=\"lx-attr-value\">Common Misconception</span>, <span class=\"lx-attr-key\">related_concept</span>: <span class=\"lx-attr-value\">Analysis of Ordinal Data</span>, <span class=\"lx-attr-key\">summary_of_insight</span>: <span class=\"lx-attr-value\">Many people incorrectly apply statistical measures (like the mean) to ordinal data without understanding the limitations, which can lead to misinterpretations.</span>}</div>"}, {"index": 3, "class": "practical_insight", "text": "Identify potential problems when interpreting the data.", "color": "#C8E6C9", "startPos": 980, "endPos": 1035, "beforeText": "after this class, you need to know why is not right.\n\n[SLIDE DESCRIPTION]\nThe slide shows a quiz titled &#x27;Assessing Academic Data Quality&#x27;. It asks to ", "extractionText": "identify potential problems when interpreting the data.", "afterText": " The table shows average teaching evaluation scores for various colleges over academic year 112. The options are: &#x27;Final Presentation&#x27;, &#x27;Data processi", "attributesHtml": "<div><strong>class:</strong> practical_insight</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">insight_type</span>: <span class=\"lx-attr-value\">Data Interpretation Challenge</span>, <span class=\"lx-attr-key\">related_concept</span>: <span class=\"lx-attr-value\">Ordinal Values</span>, <span class=\"lx-attr-key\">summary_of_insight</span>: <span class=\"lx-attr-value\">Interpreting data, especially ordinal data, requires careful consideration of potential problems and the appropriate analytical methods.</span>}</div>"}];
+        let currentIndex = 0;
+        let isPlaying = false;
+        let animationInterval = null;
+        let animationSpeed = 1.0;
+
+        function updateDisplay() {
+          const extraction = extractions[currentIndex];
+          if (!extraction) return;
+
+          document.getElementById('attributesContainer').innerHTML = extraction.attributesHtml;
+          document.getElementById('entityInfo').textContent = (currentIndex + 1) + '/' + extractions.length;
+          document.getElementById('posInfo').textContent = '[' + extraction.startPos + '-' + extraction.endPos + ']';
+          document.getElementById('progressSlider').value = currentIndex;
+
+          const playBtn = document.querySelector('.lx-control-btn');
+          if (playBtn) playBtn.textContent = isPlaying ? '⏸ Pause' : '▶️ Play';
+
+          const prevHighlight = document.querySelector('.lx-text-window .lx-current-highlight');
+          if (prevHighlight) prevHighlight.classList.remove('lx-current-highlight');
+          const currentSpan = document.querySelector('.lx-text-window span[data-idx="' + currentIndex + '"]');
+          if (currentSpan) {
+            currentSpan.classList.add('lx-current-highlight');
+            currentSpan.scrollIntoView({block: 'center', behavior: 'smooth'});
+          }
+        }
+
+        function nextExtraction() {
+          currentIndex = (currentIndex + 1) % extractions.length;
+          updateDisplay();
+        }
+
+        function prevExtraction() {
+          currentIndex = (currentIndex - 1 + extractions.length) % extractions.length;
+          updateDisplay();
+        }
+
+        function jumpToExtraction(index) {
+          currentIndex = parseInt(index);
+          updateDisplay();
+        }
+
+        function playPause() {
+          if (isPlaying) {
+            clearInterval(animationInterval);
+            isPlaying = false;
+          } else {
+            animationInterval = setInterval(nextExtraction, animationSpeed * 1000);
+            isPlaying = true;
+          }
+          updateDisplay();
+        }
+
+        window.playPause = playPause;
+        window.nextExtraction = nextExtraction;
+        window.prevExtraction = prevExtraction;
+        window.jumpToExtraction = jumpToExtraction;
+
+        updateDisplay();
+      })();
+    </script>

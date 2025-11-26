@@ -1,0 +1,351 @@
+<style>
+.lx-highlight { position: relative; border-radius:3px; padding:1px 2px;}
+.lx-highlight .lx-tooltip {
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out;
+  background: #333;
+  color: #fff;
+  text-align: left;
+  border-radius: 4px;
+  padding: 6px 8px;
+  position: absolute;
+  z-index: 1000;
+  bottom: 125%;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 12px;
+  max-width: 240px;
+  white-space: normal;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+}
+.lx-highlight:hover .lx-tooltip { visibility: visible; opacity:1; }
+.lx-animated-wrapper { max-width: 100%; font-family: Arial, sans-serif; }
+.lx-controls {
+  background: #fafafa; border: 1px solid #90caf9; border-radius: 8px;
+  padding: 12px; margin-bottom: 16px;
+}
+.lx-button-row {
+  display: flex; justify-content: center; gap: 8px; margin-bottom: 12px;
+}
+.lx-control-btn {
+  background: #4285f4; color: white; border: none; border-radius: 4px;
+  padding: 8px 16px; cursor: pointer; font-size: 13px; font-weight: 500;
+  transition: background-color 0.2s;
+}
+.lx-control-btn:hover { background: #3367d6; }
+.lx-progress-container {
+  margin-bottom: 8px;
+}
+.lx-progress-slider {
+  width: 100%; margin: 0; appearance: none; height: 6px;
+  background: #ddd; border-radius: 3px; outline: none;
+}
+.lx-progress-slider::-webkit-slider-thumb {
+  appearance: none; width: 18px; height: 18px; background: #4285f4;
+  border-radius: 50%; cursor: pointer;
+}
+.lx-progress-slider::-moz-range-thumb {
+  width: 18px; height: 18px; background: #4285f4; border-radius: 50%;
+  cursor: pointer; border: none;
+}
+.lx-status-text {
+  text-align: center; font-size: 12px; color: #666; margin-top: 4px;
+}
+.lx-text-window {
+  font-family: monospace; white-space: pre-wrap; border: 1px solid #90caf9;
+  padding: 12px; max-height: 260px; overflow-y: auto; margin-bottom: 12px;
+  line-height: 1.6;
+}
+.lx-attributes-panel {
+  background: #fafafa; border: 1px solid #90caf9; border-radius: 6px;
+  padding: 8px 10px; margin-top: 8px; font-size: 13px;
+}
+.lx-current-highlight {
+  border-bottom: 4px solid #ff4444;
+  font-weight: bold;
+  animation: lx-pulse 1s ease-in-out;
+}
+@keyframes lx-pulse {
+  0% { text-decoration-color: #ff4444; }
+  50% { text-decoration-color: #ff0000; }
+  100% { text-decoration-color: #ff4444; }
+}
+.lx-legend {
+  font-size: 12px; margin-bottom: 8px;
+  padding-bottom: 8px; border-bottom: 1px solid #e0e0e0;
+}
+.lx-label {
+  display: inline-block;
+  padding: 2px 4px;
+  border-radius: 3px;
+  margin-right: 4px;
+  color: #000;
+}
+.lx-attr-key {
+  font-weight: 600;
+  color: #1565c0;
+  letter-spacing: 0.3px;
+}
+.lx-attr-value {
+  font-weight: 400;
+  opacity: 0.85;
+  letter-spacing: 0.2px;
+}
+
+/* Add optimizations with larger fonts and better readability for GIFs */
+.lx-gif-optimized .lx-text-window { font-size: 16px; line-height: 1.8; }
+.lx-gif-optimized .lx-attributes-panel { font-size: 15px; }
+.lx-gif-optimized .lx-current-highlight { text-decoration-thickness: 4px; }
+</style>
+    <div class="lx-animated-wrapper lx-gif-optimized">
+      <div class="lx-attributes-panel">
+        <div class="lx-legend">Highlights Legend: <span class="lx-label" style="background-color:#D2E3FC;">audience_impact</span> <span class="lx-label" style="background-color:#C8E6C9;">opinion_statement</span></div>
+        <div id="attributesContainer"></div>
+      </div>
+      <div class="lx-text-window" id="textWindow">
+        **Page 1**
+&quot;&quot;&quot;
+REAL ESTATE ISSUES
+58
+Volume 36, Number 1, 2011
+THERE HAVE BEEN AS MANY BOOKS
+recently written about who and
+what caused the recent financial
+crisis as there are excuses for this
+debacle. If you are interested in a
+book that both <span class="lx-highlight lx-current-highlight" data-idx="0" style="background-color:#C8E6C9;">reads like fiction</span>
+due to its cast of characters, yet
+<span class="lx-highlight" data-idx="1" style="background-color:#C8E6C9;">provides you with an insider’s
+perspective</span> of what occurred on
+Wall Street and beyond during the
+global financial meltdown and subprime mortgage fiasco
+that peaked in 2008, then the book to read is The Big
+Short:  Inside the Doomsday Machine by Michael Lewis.
+For those of us in the real estate and finance industries,
+you will read in amazement how widespread and deep the
+greed, corruption and incompetence of some of the
+supposedly best minds and most privileged leaders in
+business led to the loss of $1.75 trillion in wealth in the
+subprime mortgage markets, shamed capitalism and
+ruined thousands of lives in the process.
+<span class="lx-highlight" data-idx="2" style="background-color:#C8E6C9;">Michael Lewis is a brilliant chronicler of business affairs</span>,
+who by focusing on some of the more interesting and
+controversial characters, <span class="lx-highlight" data-idx="3" style="background-color:#C8E6C9;">has the rare ability to also take
+complicated issues and subject matter and create fasci-
+nating vignettes</span>. As a former Wall Street bond trader,
+<span class="lx-highlight" data-idx="4" style="background-color:#C8E6C9;">Lewis knows where to look for information and what
+questions to ask, and whom to ask</span>. Lewis first rose to
+prominence when at just twenty-four he released Liar’s
+Poker in 1989, about his experiences with the then promi-
+nent Wall Street firm, Salomon Brothers—<span class="lx-highlight" data-idx="5" style="background-color:#C8E6C9;">an intriguing,
+fast-paced look behind the scenes</span> of the bond and capital
+markets. <span class="lx-highlight" data-idx="6" style="background-color:#C8E6C9;">Lewis still can’t seem to get over the fact that he
+was paid hundreds of thousands of dollars and bonuses
+for advising clients on the purchase of stocks and bonds
+when he readily admits at his age, with no practical
+experience, he had no clue what he was doing</span>. <span class="lx-highlight" data-idx="7" style="background-color:#C8E6C9;">This sense
+of amazement about how fees are set and generated and
+what constitutes expertise and experience carries on in
+The Big Short</span>. However, whereas his previous book, Liar’s
+Poker, dealt with millions of dollars of transactions, The
+Big Short deals in the billions. 
+The Big Short is Lewis’ eighth book. Several have been
+best sellers including his exposé on Silicon Valley entitled
+The New New Thing; the economics of big time sports,
+Moneyball; and perhaps his best known work, The Blind
+Side, which recently was made into an Academy Award-
+winning film about the unlikely life and career of football
+star Michael Oher. (The Big Short could also be made into
+a great movie). Lewis’ style is to tell the story through the
+narrative of several prominent and obscure participants.
+He does this very effectively in The Big Short, which he
+considers <span class="lx-highlight" data-idx="8" style="background-color:#C8E6C9;">a tale about systematic mass delusion</span>.
+About the Reviewer
+William McCarthy, CRE, FRICS, R.I., is
+a property developer and owner, and a real estate
+agent and consultant based in Burnaby, British
+Columbia. McCarthy is the immediate past presi-
+dent of the Real Estate Institute of Canada, and
+has served as a director and officer of several other
+professional and community organizations. 
+A Counselor of Real Estate since 1995, he
+duncumis a member of the CRE Consulting Corps and has participated in
+two major assignments for the Corps. McCarthy currently chairs the
+CRE Ethics Committee.
+RECOMMENDED READING
+The Big Short: 
+Inside the Doomsday Machine
+by Michael Lewis (©2010, W.W. Norton &amp; Co., 266 pages)
+REVIEWED BY WILLIAM P.J. McCARTHY, CRE
+RESOURCE REVIEW
+&quot;&quot;&quot;
+
+**Page 2**
+&quot;&quot;&quot;
+REAL ESTATE ISSUES
+59
+Volume 36, Number 1, 2011
+RESOURCE REVIEW
+The Big Short: Inside the Doomsday Machine
+We are introduced to Steve Eisman, who tells Lewis of
+his journey from being a strident Republican to what he
+referred to as the financial markets’ “first socialist,” as he
+became increasingly concerned and outraged over how
+deceptive and corrupt the entire mortgage lending
+business was becoming. And then Eisman and his team
+discovered what Lewis refers to as the gold mine.
+Reviewing the first round of subprime mortgages in
+intimate detail, Eisman, a Harvard-trained lawyer, first
+became <span class="lx-highlight" data-idx="9" style="background-color:#C8E6C9;">incensed</span>, and then <span class="lx-highlight" data-idx="10" style="background-color:#C8E6C9;">calculating</span>, when he realized
+that realtors, appraisers, mortgage brokers, banks,
+regulators, governments—everyone who could take a cut
+of the action—were <span class="lx-highlight" data-idx="11" style="background-color:#C8E6C9;">encouraging unqualified and
+delusional individuals to purchase residential real estate
+they could never afford</span>. As traders Charlie Ledley and
+Jamie Mai told Lewis in the book: “<span class="lx-highlight" data-idx="12" style="background-color:#C8E6C9;">The best way to
+make money on Wall Street was to seek out whatever
+Wall Street believed was least likely to happen, and bet
+on it happening</span>,” such as <span class="lx-highlight" data-idx="13" style="background-color:#C8E6C9;">the greatest domestic
+economic crisis since the Great Depression</span>.
+Eisman was not the only individual to ponder or analyze
+the subprime and securitization boom. The Deutsche
+Bank bond salesman Greg Lippmann was also thinking
+about how to make money on top of the subprime loans.
+The key would be to buy credit default swaps and deriva-
+tives, those <span class="lx-highlight" data-idx="14" style="background-color:#C8E6C9;">exotic and ultimately useless creations of
+Wall Street, impossible to qualify or quantify, or even
+explain</span>. Wall Street simply <span class="lx-highlight" data-idx="15" style="background-color:#C8E6C9;">invented artificial ways to
+generate fees and bonuses—without care or</span> considera-
+tion for the consequences. First securitize junk
+mortgages, and then create <span class="lx-highlight" data-idx="16" style="background-color:#C8E6C9;">dubious insurance schemes to
+capitalize on the defaults</span>.
+One of the first and <span class="lx-highlight" data-idx="17" style="background-color:#C8E6C9;">most focused analysts to see the
+potential windfall of the credit default swaps, and the
+money to be made by betting on the collapse of the
+subprime market</span>, is <span class="lx-highlight" data-idx="18" style="background-color:#C8E6C9;">the most interesting character
+portrayed in the book</span>, Dr. Michael Burry. Burry was an
+<span class="lx-highlight" data-idx="19" style="background-color:#C8E6C9;">introverted loner who had lost an eye to cancer</span>. Later
+diagnosed with Asperger’s Syndrome, he became a
+medical doctor and part-time stock analyst, whose
+<span class="lx-highlight" data-idx="20" style="background-color:#C8E6C9;">research and attention to detail created a cult following in
+the industry</span>. <span class="lx-highlight" data-idx="21" style="background-color:#C8E6C9;">Requiring little sleep, and with both the
+fascination of and ability to study and chart massive and
+convoluted mortgage documentation and deal sheets</span>,
+Burry knew the subprime was a farce, and that the bond
+rating agencies were willing participants in this scheme.
+Everything was rated a “buy.” How could 80 percent of
+these extremely questionable and risky pooled mortgages
+be rated Triple-A, the same as U.S. Treasury debt? Burry
+noted there was an opportunity to essentially hedge
+against the collapse of some of these funds. Credit default
+swaps were the way. Lewis explains that while Wall Street
+firms were temporarily able to hide the risk by compli-
+cating it, a handful of proactive analysts and investors,
+such as Burry, knew that betting against these notes
+would pay off—massively. This was the Big Short.
+(If you go onto the 60 Minutes website, look for the March
+14, 2010 edition where Michael Lewis talks about his book,
+and Michael Burry is profiled in a fascinating expose. In
+addition to reading The Big Short, you should also see the
+movie “Inside Job,” which just recently won the Academy
+Award for Best Feature Length Documentary. The events
+and many of the personalities discussed in The Big Short
+are featured, and dealt with harshly).  
+The Big Short is <span class="lx-highlight" data-idx="22" style="background-color:#C8E6C9;">an enjoyable read</span> and <span class="lx-highlight" data-idx="23" style="background-color:#C8E6C9;">an illuminating
+expose of one of the most shameful periods in American
+business</span>. By 2009, the American taxpayer had assumed
+more than $1 billion of bad debt and subprime losses.
+Homeownership is the noble dream of all hard-working
+families. Real estate is the foundation of a successful and
+flourishing economy. To see how these pillars of a free
+society were manipulated and abused for no purpose
+other than greed <span class="lx-highlight" data-idx="24" style="background-color:#D2E3FC;">is difficult for us, the conscientious real
+estate professionals, to comprehend</span>. The Big Short <span class="lx-highlight" data-idx="25" style="background-color:#C8E6C9;">reveals
+the painful consequences</span> that result when individual and
+corporate ethics and standards are allowed to free fall. 
+&quot;&quot;&quot;
+
+
+      </div>
+      <div class="lx-controls">
+        <div class="lx-button-row">
+          <button class="lx-control-btn" onclick="playPause()">▶️ Play</button>
+          <button class="lx-control-btn" onclick="prevExtraction()">⏮ Previous</button>
+          <button class="lx-control-btn" onclick="nextExtraction()">⏭ Next</button>
+        </div>
+        <div class="lx-progress-container">
+          <input type="range" id="progressSlider" class="lx-progress-slider"
+                 min="0" max="25" value="0"
+                 onchange="jumpToExtraction(this.value)">
+        </div>
+        <div class="lx-status-text">
+          Entity <span id="entityInfo">1/26</span> |
+          Pos <span id="posInfo">[245-263]</span>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      (function() {
+        const extractions = [{"index": 0, "class": "opinion_statement", "text": "reads like fiction", "color": "#C8E6C9", "startPos": 245, "endPos": 263, "beforeText": "cently written about who and\nwhat caused the recent financial\ncrisis as there are excuses for this\ndebacle. If you are interested in a\nbook that both ", "extractionText": "reads like fiction", "afterText": "\ndue to its cast of characters, yet\nprovides you with an insider\u2019s\nperspective of what occurred on\nWall Street and beyond during the\nglobal financial ", "attributesHtml": "<div><strong>class:</strong> opinion_statement</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">subject</span>: <span class=\"lx-attr-value\">The book</span>, <span class=\"lx-attr-key\">sentiment</span>: <span class=\"lx-attr-value\">Positive</span>, <span class=\"lx-attr-key\">key_phrase</span>: <span class=\"lx-attr-value\">reads like fiction</span>}</div>"}, {"index": 1, "class": "opinion_statement", "text": "provides you with an insider\u2019s perspective", "color": "#C8E6C9", "startPos": 299, "endPos": 341, "beforeText": "nancial\ncrisis as there are excuses for this\ndebacle. If you are interested in a\nbook that both reads like fiction\ndue to its cast of characters, yet\n", "extractionText": "provides you with an insider\u2019s\nperspective", "afterText": " of what occurred on\nWall Street and beyond during the\nglobal financial meltdown and subprime mortgage fiasco\nthat peaked in 2008, then the book to re", "attributesHtml": "<div><strong>class:</strong> opinion_statement</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">subject</span>: <span class=\"lx-attr-value\">The book</span>, <span class=\"lx-attr-key\">sentiment</span>: <span class=\"lx-attr-value\">Positive</span>, <span class=\"lx-attr-key\">key_phrase</span>: <span class=\"lx-attr-value\">insider\u2019s perspective</span>}</div>"}, {"index": 2, "class": "opinion_statement", "text": "Michael Lewis is a brilliant chronicler of business affairs", "color": "#C8E6C9", "startPos": 927, "endPos": 986, "beforeText": "usiness led to the loss of $1.75 trillion in wealth in the\nsubprime mortgage markets, shamed capitalism and\nruined thousands of lives in the process.\n", "extractionText": "Michael Lewis is a brilliant chronicler of business affairs", "afterText": ",\nwho by focusing on some of the more interesting and\ncontroversial characters, has the rare ability to also take\ncomplicated issues and subject matte", "attributesHtml": "<div><strong>class:</strong> opinion_statement</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">subject</span>: <span class=\"lx-attr-value\">Michael Lewis</span>, <span class=\"lx-attr-key\">sentiment</span>: <span class=\"lx-attr-value\">Positive</span>, <span class=\"lx-attr-key\">key_phrase</span>: <span class=\"lx-attr-value\">brilliant chronicler</span>}</div>"}, {"index": 3, "class": "opinion_statement", "text": "has the rare ability to also take complicated issues and subject matter and create fasci-nating vignettes", "color": "#C8E6C9", "startPos": 1066, "endPos": 1172, "beforeText": "e process.\nMichael Lewis is a brilliant chronicler of business affairs,\nwho by focusing on some of the more interesting and\ncontroversial characters, ", "extractionText": "has the rare ability to also take\ncomplicated issues and subject matter and create fasci-\nnating vignettes", "afterText": ". As a former Wall Street bond trader,\nLewis knows where to look for information and what\nquestions to ask, and whom to ask. Lewis first rose to\npromi", "attributesHtml": "<div><strong>class:</strong> opinion_statement</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">subject</span>: <span class=\"lx-attr-value\">Michael Lewis</span>, <span class=\"lx-attr-key\">sentiment</span>: <span class=\"lx-attr-value\">Positive</span>, <span class=\"lx-attr-key\">key_phrase</span>: <span class=\"lx-attr-value\">fascinating vignettes</span>}</div>"}, {"index": 4, "class": "opinion_statement", "text": "Lewis knows where to look for information and what questions to ask, and whom to ask", "color": "#C8E6C9", "startPos": 1211, "endPos": 1295, "beforeText": "ers, has the rare ability to also take\ncomplicated issues and subject matter and create fasci-\nnating vignettes. As a former Wall Street bond trader,\n", "extractionText": "Lewis knows where to look for information and what\nquestions to ask, and whom to ask", "afterText": ". Lewis first rose to\nprominence when at just twenty-four he released Liar\u2019s\nPoker in 1989, about his experiences with the then promi-\nnent Wall Stree", "attributesHtml": "<div><strong>class:</strong> opinion_statement</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">subject</span>: <span class=\"lx-attr-value\">Lewis</span>, <span class=\"lx-attr-key\">sentiment</span>: <span class=\"lx-attr-value\">Positive</span>, <span class=\"lx-attr-key\">key_phrase</span>: <span class=\"lx-attr-value\">knows where to look</span>}</div>"}, {"index": 5, "class": "opinion_statement", "text": "an intriguing, fast-paced look behind the scenes", "color": "#C8E6C9", "startPos": 1470, "endPos": 1518, "beforeText": "minence when at just twenty-four he released Liar\u2019s\nPoker in 1989, about his experiences with the then promi-\nnent Wall Street firm, Salomon Brothers\u2014", "extractionText": "an intriguing,\nfast-paced look behind the scenes", "afterText": " of the bond and capital\nmarkets. Lewis still can\u2019t seem to get over the fact that he\nwas paid hundreds of thousands of dollars and bonuses\nfor advisi", "attributesHtml": "<div><strong>class:</strong> opinion_statement</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">subject</span>: <span class=\"lx-attr-value\">Liar\u2019s Poker</span>, <span class=\"lx-attr-key\">sentiment</span>: <span class=\"lx-attr-value\">Positive</span>, <span class=\"lx-attr-key\">key_phrase</span>: <span class=\"lx-attr-value\">intriguing, fast-paced</span>}</div>"}, {"index": 6, "class": "opinion_statement", "text": "Lewis still can\u2019t seem to get over the fact that he was paid hundreds of thousands of dollars and bonuses for advising clients on the purchase of stocks and bonds when he readily admits at his age, with no practical experience, he had no clue what he was doing", "color": "#C8E6C9", "startPos": 1552, "endPos": 1812, "beforeText": "iences with the then promi-\nnent Wall Street firm, Salomon Brothers\u2014an intriguing,\nfast-paced look behind the scenes of the bond and capital\nmarkets. ", "extractionText": "Lewis still can\u2019t seem to get over the fact that he\nwas paid hundreds of thousands of dollars and bonuses\nfor advising clients on the purchase of stocks and bonds\nwhen he readily admits at his age, with no practical\nexperience, he had no clue what he was doing", "afterText": ". This sense\nof amazement about how fees are set and generated and\nwhat constitutes expertise and experience carries on in\nThe Big Short. However, whe", "attributesHtml": "<div><strong>class:</strong> opinion_statement</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">subject</span>: <span class=\"lx-attr-value\">Lewis&#x27;s past experience</span>, <span class=\"lx-attr-key\">sentiment</span>: <span class=\"lx-attr-value\">Negative</span>, <span class=\"lx-attr-key\">key_phrase</span>: <span class=\"lx-attr-value\">no clue what he was doing</span>}</div>"}, {"index": 7, "class": "opinion_statement", "text": "This sense of amazement about how fees are set and generated and what constitutes expertise and experience carries on in The Big Short", "color": "#C8E6C9", "startPos": 1814, "endPos": 1948, "beforeText": "vising clients on the purchase of stocks and bonds\nwhen he readily admits at his age, with no practical\nexperience, he had no clue what he was doing. ", "extractionText": "This sense\nof amazement about how fees are set and generated and\nwhat constitutes expertise and experience carries on in\nThe Big Short", "afterText": ". However, whereas his previous book, Liar\u2019s\nPoker, dealt with millions of dollars of transactions, The\nBig Short deals in the billions. \nThe Big Shor", "attributesHtml": "<div><strong>class:</strong> opinion_statement</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">subject</span>: <span class=\"lx-attr-value\">The Big Short</span>, <span class=\"lx-attr-key\">sentiment</span>: <span class=\"lx-attr-value\">Neutral</span>, <span class=\"lx-attr-key\">key_phrase</span>: <span class=\"lx-attr-value\">sense of amazement</span>}</div>"}, {"index": 8, "class": "opinion_statement", "text": "a tale about systematic mass delusion", "color": "#C8E6C9", "startPos": 2666, "endPos": 2703, "beforeText": "ell the story through the\nnarrative of several prominent and obscure participants.\nHe does this very effectively in The Big Short, which he\nconsiders ", "extractionText": "a tale about systematic mass delusion", "afterText": ".\nAbout the Reviewer\nWilliam McCarthy, CRE, FRICS, R.I., is\na property developer and owner, and a real estate\nagent and consultant based in Burnaby, B", "attributesHtml": "<div><strong>class:</strong> opinion_statement</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">subject</span>: <span class=\"lx-attr-value\">The Big Short</span>, <span class=\"lx-attr-key\">sentiment</span>: <span class=\"lx-attr-value\">Negative</span>, <span class=\"lx-attr-key\">key_phrase</span>: <span class=\"lx-attr-value\">systematic mass delusion</span>}</div>"}, {"index": 9, "class": "opinion_statement", "text": "incensed", "color": "#C8E6C9", "startPos": 4048, "endPos": 4056, "beforeText": " Lewis refers to as the gold mine.\nReviewing the first round of subprime mortgages in\nintimate detail, Eisman, a Harvard-trained lawyer, first\nbecame ", "extractionText": "incensed", "afterText": ", and then calculating, when he realized\nthat realtors, appraisers, mortgage brokers, banks,\nregulators, governments\u2014everyone who could take a cut\nof ", "attributesHtml": "<div><strong>class:</strong> opinion_statement</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">subject</span>: <span class=\"lx-attr-value\">Eisman</span>, <span class=\"lx-attr-key\">sentiment</span>: <span class=\"lx-attr-value\">Negative</span>, <span class=\"lx-attr-key\">key_phrase</span>: <span class=\"lx-attr-value\">incensed</span>}</div>"}, {"index": 10, "class": "opinion_statement", "text": "calculating", "color": "#C8E6C9", "startPos": 4067, "endPos": 4078, "beforeText": " the gold mine.\nReviewing the first round of subprime mortgages in\nintimate detail, Eisman, a Harvard-trained lawyer, first\nbecame incensed, and then ", "extractionText": "calculating", "afterText": ", when he realized\nthat realtors, appraisers, mortgage brokers, banks,\nregulators, governments\u2014everyone who could take a cut\nof the action\u2014were encour", "attributesHtml": "<div><strong>class:</strong> opinion_statement</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">subject</span>: <span class=\"lx-attr-value\">Eisman</span>, <span class=\"lx-attr-key\">sentiment</span>: <span class=\"lx-attr-value\">Neutral</span>, <span class=\"lx-attr-key\">key_phrase</span>: <span class=\"lx-attr-value\">calculating</span>}</div>"}, {"index": 11, "class": "opinion_statement", "text": "encouraging unqualified and delusional individuals to purchase residential real estate they could never afford", "color": "#C8E6C9", "startPos": 4222, "endPos": 4332, "beforeText": "lating, when he realized\nthat realtors, appraisers, mortgage brokers, banks,\nregulators, governments\u2014everyone who could take a cut\nof the action\u2014were ", "extractionText": "encouraging unqualified and\ndelusional individuals to purchase residential real estate\nthey could never afford", "afterText": ". As traders Charlie Ledley and\nJamie Mai told Lewis in the book: \u201cThe best way to\nmake money on Wall Street was to seek out whatever\nWall Street beli", "attributesHtml": "<div><strong>class:</strong> opinion_statement</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">subject</span>: <span class=\"lx-attr-value\">realtors, appraisers, mortgage brokers, banks, regulators, governments</span>, <span class=\"lx-attr-key\">sentiment</span>: <span class=\"lx-attr-value\">Negative</span>, <span class=\"lx-attr-key\">key_phrase</span>: <span class=\"lx-attr-value\">encouraging unqualified and delusional individuals</span>}</div>"}, {"index": 12, "class": "opinion_statement", "text": "The best way to make money on Wall Street was to seek out whatever Wall Street believed was least likely to happen, and bet on it happening", "color": "#C8E6C9", "startPos": 4399, "endPos": 4538, "beforeText": "\ndelusional individuals to purchase residential real estate\nthey could never afford. As traders Charlie Ledley and\nJamie Mai told Lewis in the book: \u201c", "extractionText": "The best way to\nmake money on Wall Street was to seek out whatever\nWall Street believed was least likely to happen, and bet\non it happening", "afterText": ",\u201d such as the greatest domestic\neconomic crisis since the Great Depression.\nEisman was not the only individual to ponder or analyze\nthe subprime and ", "attributesHtml": "<div><strong>class:</strong> opinion_statement</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">subject</span>: <span class=\"lx-attr-value\">making money on Wall Street</span>, <span class=\"lx-attr-key\">sentiment</span>: <span class=\"lx-attr-value\">Positive</span>, <span class=\"lx-attr-key\">key_phrase</span>: <span class=\"lx-attr-value\">best way to make money</span>}</div>"}, {"index": 13, "class": "opinion_statement", "text": "the greatest domestic economic crisis since the Great Depression", "color": "#C8E6C9", "startPos": 4549, "endPos": 4613, "beforeText": "The best way to\nmake money on Wall Street was to seek out whatever\nWall Street believed was least likely to happen, and bet\non it happening,\u201d such as ", "extractionText": "the greatest domestic\neconomic crisis since the Great Depression", "afterText": ".\nEisman was not the only individual to ponder or analyze\nthe subprime and securitization boom. The Deutsche\nBank bond salesman Greg Lippmann was also", "attributesHtml": "<div><strong>class:</strong> opinion_statement</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">subject</span>: <span class=\"lx-attr-value\">economic crisis</span>, <span class=\"lx-attr-key\">sentiment</span>: <span class=\"lx-attr-value\">Negative</span>, <span class=\"lx-attr-key\">key_phrase</span>: <span class=\"lx-attr-value\">greatest domestic economic crisis</span>}</div>"}, {"index": 14, "class": "opinion_statement", "text": "exotic and ultimately useless creations of Wall Street, impossible to qualify or quantify, or even explain", "color": "#C8E6C9", "startPos": 4897, "endPos": 5003, "beforeText": "ippmann was also thinking\nabout how to make money on top of the subprime loans.\nThe key would be to buy credit default swaps and deriva-\ntives, those ", "extractionText": "exotic and ultimately useless creations of\nWall Street, impossible to qualify or quantify, or even\nexplain", "afterText": ". Wall Street simply invented artificial ways to\ngenerate fees and bonuses\u2014without care or considera-\ntion for the consequences. First securitize junk", "attributesHtml": "<div><strong>class:</strong> opinion_statement</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">subject</span>: <span class=\"lx-attr-value\">credit default swaps and derivatives</span>, <span class=\"lx-attr-key\">sentiment</span>: <span class=\"lx-attr-value\">Negative</span>, <span class=\"lx-attr-key\">key_phrase</span>: <span class=\"lx-attr-value\">exotic and ultimately useless</span>}</div>"}, {"index": 15, "class": "opinion_statement", "text": "invented artificial ways to generate fees and bonuses\u2014without care or consideration for the consequences", "color": "#C8E6C9", "startPos": 5024, "endPos": 5093, "beforeText": "d deriva-\ntives, those exotic and ultimately useless creations of\nWall Street, impossible to qualify or quantify, or even\nexplain. Wall Street simply ", "extractionText": "invented artificial ways to\ngenerate fees and bonuses\u2014without care or", "afterText": " considera-\ntion for the consequences. First securitize junk\nmortgages, and then create dubious insurance schemes to\ncapitalize on the defaults.\nOne o", "attributesHtml": "<div><strong>class:</strong> opinion_statement</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">subject</span>: <span class=\"lx-attr-value\">Wall Street</span>, <span class=\"lx-attr-key\">sentiment</span>: <span class=\"lx-attr-value\">Negative</span>, <span class=\"lx-attr-key\">key_phrase</span>: <span class=\"lx-attr-value\">artificial ways to generate fees and bonuses</span>}</div>"}, {"index": 16, "class": "opinion_statement", "text": "dubious insurance schemes to capitalize on the defaults", "color": "#C8E6C9", "startPos": 5181, "endPos": 5236, "beforeText": "d artificial ways to\ngenerate fees and bonuses\u2014without care or considera-\ntion for the consequences. First securitize junk\nmortgages, and then create ", "extractionText": "dubious insurance schemes to\ncapitalize on the defaults", "afterText": ".\nOne of the first and most focused analysts to see the\npotential windfall of the credit default swaps, and the\nmoney to be made by betting on the col", "attributesHtml": "<div><strong>class:</strong> opinion_statement</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">subject</span>: <span class=\"lx-attr-value\">insurance schemes</span>, <span class=\"lx-attr-key\">sentiment</span>: <span class=\"lx-attr-value\">Negative</span>, <span class=\"lx-attr-key\">key_phrase</span>: <span class=\"lx-attr-value\">dubious insurance schemes</span>}</div>"}, {"index": 17, "class": "opinion_statement", "text": "most focused analysts to see the potential windfall of the credit default swaps, and the money to be made by betting on the collapse of the subprime market", "color": "#C8E6C9", "startPos": 5259, "endPos": 5414, "beforeText": " for the consequences. First securitize junk\nmortgages, and then create dubious insurance schemes to\ncapitalize on the defaults.\nOne of the first and ", "extractionText": "most focused analysts to see the\npotential windfall of the credit default swaps, and the\nmoney to be made by betting on the collapse of the\nsubprime market", "afterText": ", is the most interesting character\nportrayed in the book, Dr. Michael Burry. Burry was an\nintroverted loner who had lost an eye to cancer. Later\ndiag", "attributesHtml": "<div><strong>class:</strong> opinion_statement</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">subject</span>: <span class=\"lx-attr-value\">analysts</span>, <span class=\"lx-attr-key\">sentiment</span>: <span class=\"lx-attr-value\">Positive</span>, <span class=\"lx-attr-key\">key_phrase</span>: <span class=\"lx-attr-value\">potential windfall</span>}</div>"}, {"index": 18, "class": "opinion_statement", "text": "the most interesting character portrayed in the book", "color": "#C8E6C9", "startPos": 5419, "endPos": 5471, "beforeText": "ed analysts to see the\npotential windfall of the credit default swaps, and the\nmoney to be made by betting on the collapse of the\nsubprime market, is ", "extractionText": "the most interesting character\nportrayed in the book", "afterText": ", Dr. Michael Burry. Burry was an\nintroverted loner who had lost an eye to cancer. Later\ndiagnosed with Asperger\u2019s Syndrome, he became a\nmedical docto", "attributesHtml": "<div><strong>class:</strong> opinion_statement</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">subject</span>: <span class=\"lx-attr-value\">Dr. Michael Burry</span>, <span class=\"lx-attr-key\">sentiment</span>: <span class=\"lx-attr-value\">Positive</span>, <span class=\"lx-attr-key\">key_phrase</span>: <span class=\"lx-attr-value\">most interesting character</span>}</div>"}, {"index": 19, "class": "opinion_statement", "text": "introverted loner who had lost an eye to cancer", "color": "#C8E6C9", "startPos": 5505, "endPos": 5552, "beforeText": "o be made by betting on the collapse of the\nsubprime market, is the most interesting character\nportrayed in the book, Dr. Michael Burry. Burry was an\n", "extractionText": "introverted loner who had lost an eye to cancer", "afterText": ". Later\ndiagnosed with Asperger\u2019s Syndrome, he became a\nmedical doctor and part-time stock analyst, whose\nresearch and attention to detail created a c", "attributesHtml": "<div><strong>class:</strong> opinion_statement</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">subject</span>: <span class=\"lx-attr-value\">Burry</span>, <span class=\"lx-attr-key\">sentiment</span>: <span class=\"lx-attr-value\">Neutral</span>, <span class=\"lx-attr-key\">key_phrase</span>: <span class=\"lx-attr-value\">introverted loner</span>}</div>"}, {"index": 20, "class": "opinion_statement", "text": "research and attention to detail created a cult following in the industry", "color": "#C8E6C9", "startPos": 5658, "endPos": 5731, "beforeText": "roverted loner who had lost an eye to cancer. Later\ndiagnosed with Asperger\u2019s Syndrome, he became a\nmedical doctor and part-time stock analyst, whose\n", "extractionText": "research and attention to detail created a cult following in\nthe industry", "afterText": ". Requiring little sleep, and with both the\nfascination of and ability to study and chart massive and\nconvoluted mortgage documentation and deal sheet", "attributesHtml": "<div><strong>class:</strong> opinion_statement</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">subject</span>: <span class=\"lx-attr-value\">Burry&#x27;s research and attention to detail</span>, <span class=\"lx-attr-key\">sentiment</span>: <span class=\"lx-attr-value\">Positive</span>, <span class=\"lx-attr-key\">key_phrase</span>: <span class=\"lx-attr-value\">created a cult following</span>}</div>"}, {"index": 21, "class": "opinion_statement", "text": "Requiring little sleep, and with both the fascination of and ability to study and chart massive and convoluted mortgage documentation and deal sheets", "color": "#C8E6C9", "startPos": 5733, "endPos": 5882, "beforeText": "\u2019s Syndrome, he became a\nmedical doctor and part-time stock analyst, whose\nresearch and attention to detail created a cult following in\nthe industry. ", "extractionText": "Requiring little sleep, and with both the\nfascination of and ability to study and chart massive and\nconvoluted mortgage documentation and deal sheets", "afterText": ",\nBurry knew the subprime was a farce, and that the bond\nrating agencies were willing participants in this scheme.\nEverything was rated a \u201cbuy.\u201d How c", "attributesHtml": "<div><strong>class:</strong> opinion_statement</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">subject</span>: <span class=\"lx-attr-value\">Burry</span>, <span class=\"lx-attr-key\">sentiment</span>: <span class=\"lx-attr-value\">Positive</span>, <span class=\"lx-attr-key\">key_phrase</span>: <span class=\"lx-attr-value\">fascination of and ability to study and chart massive and convoluted mortgage documentation and deal sheets</span>}</div>"}, {"index": 22, "class": "opinion_statement", "text": "an enjoyable read", "color": "#C8E6C9", "startPos": 7010, "endPos": 7027, "beforeText": "ure Length Documentary. The events\nand many of the personalities discussed in The Big Short\nare featured, and dealt with harshly).  \nThe Big Short is ", "extractionText": "an enjoyable read", "afterText": " and an illuminating\nexpose of one of the most shameful periods in American\nbusiness. By 2009, the American taxpayer had assumed\nmore than $1 billion ", "attributesHtml": "<div><strong>class:</strong> opinion_statement</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">subject</span>: <span class=\"lx-attr-value\">The Big Short</span>, <span class=\"lx-attr-key\">sentiment</span>: <span class=\"lx-attr-value\">Positive</span>, <span class=\"lx-attr-key\">key_phrase</span>: <span class=\"lx-attr-value\">enjoyable read</span>}</div>"}, {"index": 23, "class": "opinion_statement", "text": "an illuminating expose of one of the most shameful periods in American business", "color": "#C8E6C9", "startPos": 7032, "endPos": 7111, "beforeText": ". The events\nand many of the personalities discussed in The Big Short\nare featured, and dealt with harshly).  \nThe Big Short is an enjoyable read and ", "extractionText": "an illuminating\nexpose of one of the most shameful periods in American\nbusiness", "afterText": ". By 2009, the American taxpayer had assumed\nmore than $1 billion of bad debt and subprime losses.\nHomeownership is the noble dream of all hard-workin", "attributesHtml": "<div><strong>class:</strong> opinion_statement</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">subject</span>: <span class=\"lx-attr-value\">The Big Short</span>, <span class=\"lx-attr-key\">sentiment</span>: <span class=\"lx-attr-value\">Positive</span>, <span class=\"lx-attr-key\">key_phrase</span>: <span class=\"lx-attr-value\">illuminating expose</span>}</div>"}, {"index": 24, "class": "audience_impact", "text": "is difficult for us, the conscientious real estate professionals, to comprehend", "color": "#D2E3FC", "startPos": 7447, "endPos": 7526, "beforeText": "ation of a successful and\nflourishing economy. To see how these pillars of a free\nsociety were manipulated and abused for no purpose\nother than greed ", "extractionText": "is difficult for us, the conscientious real\nestate professionals, to comprehend", "afterText": ". The Big Short reveals\nthe painful consequences that result when individual and\ncorporate ethics and standards are allowed to free fall. \u0002\n&quot;&quot;&quot;\n\n", "attributesHtml": "<div><strong>class:</strong> audience_impact</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">emotion_evoked</span>: <span class=\"lx-attr-value\">disbelief, outrage</span>, <span class=\"lx-attr-key\">causal_element</span>: <span class=\"lx-attr-value\">the manipulation and abuse of the pillars of a free society for greed</span>, <span class=\"lx-attr-key\">target_audience</span>: <span class=\"lx-attr-value\">conscientious real estate professionals</span>}</div>"}, {"index": 25, "class": "opinion_statement", "text": "reveals the painful consequences", "color": "#C8E6C9", "startPos": 7542, "endPos": 7574, "beforeText": "manipulated and abused for no purpose\nother than greed is difficult for us, the conscientious real\nestate professionals, to comprehend. The Big Short ", "extractionText": "reveals\nthe painful consequences", "afterText": " that result when individual and\ncorporate ethics and standards are allowed to free fall. \u0002\n&quot;&quot;&quot;\n\n", "attributesHtml": "<div><strong>class:</strong> opinion_statement</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">subject</span>: <span class=\"lx-attr-value\">The Big Short</span>, <span class=\"lx-attr-key\">sentiment</span>: <span class=\"lx-attr-value\">Positive</span>, <span class=\"lx-attr-key\">key_phrase</span>: <span class=\"lx-attr-value\">reveals the painful consequences</span>}</div>"}];
+        let currentIndex = 0;
+        let isPlaying = false;
+        let animationInterval = null;
+        let animationSpeed = 1.0;
+
+        function updateDisplay() {
+          const extraction = extractions[currentIndex];
+          if (!extraction) return;
+
+          document.getElementById('attributesContainer').innerHTML = extraction.attributesHtml;
+          document.getElementById('entityInfo').textContent = (currentIndex + 1) + '/' + extractions.length;
+          document.getElementById('posInfo').textContent = '[' + extraction.startPos + '-' + extraction.endPos + ']';
+          document.getElementById('progressSlider').value = currentIndex;
+
+          const playBtn = document.querySelector('.lx-control-btn');
+          if (playBtn) playBtn.textContent = isPlaying ? '⏸ Pause' : '▶️ Play';
+
+          const prevHighlight = document.querySelector('.lx-text-window .lx-current-highlight');
+          if (prevHighlight) prevHighlight.classList.remove('lx-current-highlight');
+          const currentSpan = document.querySelector('.lx-text-window span[data-idx="' + currentIndex + '"]');
+          if (currentSpan) {
+            currentSpan.classList.add('lx-current-highlight');
+            currentSpan.scrollIntoView({block: 'center', behavior: 'smooth'});
+          }
+        }
+
+        function nextExtraction() {
+          currentIndex = (currentIndex + 1) % extractions.length;
+          updateDisplay();
+        }
+
+        function prevExtraction() {
+          currentIndex = (currentIndex - 1 + extractions.length) % extractions.length;
+          updateDisplay();
+        }
+
+        function jumpToExtraction(index) {
+          currentIndex = parseInt(index);
+          updateDisplay();
+        }
+
+        function playPause() {
+          if (isPlaying) {
+            clearInterval(animationInterval);
+            isPlaying = false;
+          } else {
+            animationInterval = setInterval(nextExtraction, animationSpeed * 1000);
+            isPlaying = true;
+          }
+          updateDisplay();
+        }
+
+        window.playPause = playPause;
+        window.nextExtraction = nextExtraction;
+        window.prevExtraction = prevExtraction;
+        window.jumpToExtraction = jumpToExtraction;
+
+        updateDisplay();
+      })();
+    </script>

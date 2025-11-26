@@ -1,0 +1,20 @@
+# LECTURE ANALYSIS: Ordinal Values
+## Video Segment: 90:00 - 93:19
+
+[SLIDE DESCRIPTION]
+The slide is titled "Ordinal". It explains that ordinal values can help to order objects. It provides examples of medals (Gold, Silver, Bronze) and levels of agreement (Strongly disagree, Disagree, Neutral, Agree, Strongly agree). It also poses the question: "How to analyze?" with options like Distribution, Mode, Mean, (Range).
+
+[TRANSCRIPT - 00:00:00]
+I do a quotation. And then I will identify, I do me. And then I do a quotation. I do a range as a quotation. I want to give you another example. So in that another example, could you go to NTU Cool? And then there is a question called assessing academic data quality. So go there. And then try to understand why actually I say is something very difficult for you need to be care about that.
+
+[SLIDE DESCRIPTION]
+The slide shows a screenshot of a quiz titled "Assessing Academic Data Quality". It presents a question asking to identify which KDD phases might correspond to "Student Paper Presentation", "Data Processing", and "Evaluation". It shows the results: "Final Presentation" with 19 respondents (16% answered correctly), "Data Processing" with 34 respondents (82% answered correctly), and "Evaluation" with 6 respondents (13% answered correctly).
+
+[TRANSCRIPT - 00:00:00]
+Actually you see people do me all the time about that. But that is not right. And then I want you to know after this class, you need to know why is not right.
+
+[SLIDE DESCRIPTION]
+The slide shows the quiz interface for "Assessing Academic Data Quality". It displays the question: "Considering the table of average scores for various colleges over academic year 112, identify potential problems when interpreting the data. Select all that apply." Below the question, there is a table with two columns: "College" and "Academic Year 113". The colleges listed are "College of Humanities and Social Sciences", "College of Engineering", "College of Life Science", and "College of Political Science". The scores for Academic Year 113 are 4.64, 4.45, 4.48, and 4.28 respectively. The slide also shows quiz settings like "Type: Graded Quiz", "Points: 1", "Assignment Group:", "Shuffle Answers: No", "Time Limit: 2 minutes", and "Multiple Attempts: Always". There is also a "Preview" button and a "Lock" button.
+
+[TRANSCRIPT - 00:00:00]
+rolled in the end of today's course. The grade of the quiz does not matter, but please make sure you complete the quiz before you get the deadline after you get the deadline.
